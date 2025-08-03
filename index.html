@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML & CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML & CSS Cheat Sheet</h1>
+      <p>A quick reference guide for common HTML tags and CSS properties.</p>
+    </header>
+
+    <!-- HTML Table Section -->
+    <section>
+      <h2>HTML Tags</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Example</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&lt;a&gt;</code></td>
+            <td><a href="#">Link</a></td>
+            <td>Defines a hyperlink.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;h1&gt; - &lt;h6&gt;</code></td>
+            <td><h3>Heading</h3></td>
+            <td>Defines headings, <code>&lt;h1&gt;</code> is the largest.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;p&gt;</code></td>
+            <td><p>This is a paragraph.</p></td>
+            <td>Defines a block of text.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;img&gt;</code></td>
+            <td><img src="https://via.placeholder.com/50" alt="Example" /></td>
+            <td>
+              Embeds an image; requires <code>src</code> and <code>alt</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;ul&gt; &lt;li&gt;</code></td>
+            <td>
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+              </ul>
+            </td>
+            <td>Defines an unordered list with list items.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;ol&gt; &lt;li&gt;</code></td>
+            <td>
+              <ol>
+                <li>First</li>
+                <li>Second</li>
+              </ol>
+            </td>
+            <td>Defines an ordered (numbered) list.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;div&gt;</code></td>
+            <td>
+              <div style="border:1px solid #004466; padding:4px;">Box</div>
+            </td>
+            <td>Generic container for content.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;span&gt;</code></td>
+            <td><span style="color:red;">Red text</span></td>
+            <td>Inline container for styling part of text.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;form&gt;</code></td>
+            <td>
+              <form>
+                <input type="text" placeholder="Name" />
+              </form>
+            </td>
+            <td>Defines an input form for user data.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;button&gt;</code></td>
+            <td><button>Click Me</button></td>
+            <td>Clickable button element.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;strong&gt;</code></td>
+            <td><strong>Bold Text</strong></td>
+            <td>Makes text bold (semantic importance).</td>
+          </tr>
+          <tr>
+            <td><code>&lt;em&gt;</code></td>
+            <td><em>Italic Text</em></td>
+            <td>Makes text italic (emphasis).</td>
+          </tr>
+          <tr>
+            <td><code>&lt;mark&gt;</code></td>
+            <td><mark>Highlighted Text</mark></td>
+            <td>Highlights text with yellow by default.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;blockquote&gt;</code></td>
+            <td><blockquote>“This is a quote.”</blockquote></td>
+            <td>Displays a block quotation.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;audio&gt;</code></td>
+            <td>
+              <audio controls><source src="#" type="audio/mpeg" /></audio>
+            </td>
+            <td>Embeds audio content with controls.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;video&gt;</code></td>
+            <td>
+              <video width="100" controls>
+                <source src="#" type="video/mp4" />
+              </video>
+            </td>
+            <td>Embeds video content with controls.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;iframe&gt;</code></td>
+            <td>
+              <iframe
+                width="120"
+                height="60"
+                src="https://www.example.com"
+              ></iframe>
+            </td>
+            <td>Embeds another webpage inside the page.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;label&gt;</code></td>
+            <td>
+              <label for="name">Name:</label> <input id="name" type="text" />
+            </td>
+            <td>Associates text with a form input.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;select&gt;</code></td>
+            <td>
+              <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </td>
+            <td>Dropdown menu for form input.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;textarea&gt;</code></td>
+            <td><textarea rows="2" cols="15">Text here...</textarea></td>
+            <td>Multiline text input for forms.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CSS Table Section -->
+    <section>
+      <h2>CSS Properties</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Example</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>color</code></td>
+            <td style="color: blue;">Blue Text</td>
+            <td>Sets the text color.</td>
+          </tr>
+          <tr>
+            <td><code>background-color</code></td>
+            <td style="background-color: yellow;">Yellow Background</td>
+            <td>Sets the background color.</td>
+          </tr>
+          <tr>
+            <td><code>font-family</code></td>
+            <td style="font-family: monospace;">Monospace Example</td>
+            <td>Defines the font style for text.</td>
+          </tr>
+          <tr>
+            <td><code>font-size</code></td>
+            <td style="font-size: 20px;">20px Text</td>
+            <td>Controls the size of text.</td>
+          </tr>
+          <tr>
+            <td><code>margin</code></td>
+            <td style="margin: 10px; border: 1px solid black;">
+              Box with Margin
+            </td>
+            <td>Space outside the element.</td>
+          </tr>
+          <tr>
+            <td><code>padding</code></td>
+            <td style="padding: 10px; border: 1px solid black;">
+              Box with Padding
+            </td>
+            <td>Space inside the element.</td>
+          </tr>
+          <tr>
+            <td><code>border</code></td>
+            <td style="border: 2px dashed red;">Dashed Border</td>
+            <td>Defines the border style, width, and color.</td>
+          </tr>
+          <tr>
+            <td><code>width</code> / <code>height</code></td>
+            <td style="width:80px;height:40px;border:1px solid black;">Box</td>
+            <td>Sets the dimensions of an element.</td>
+          </tr>
+          <tr>
+            <td><code>text-align</code></td>
+            <td style="text-align: center; border:1px solid black;">
+              Centered Text
+            </td>
+            <td>Controls horizontal text alignment.</td>
+          </tr>
+          <tr>
+            <td><code>display</code></td>
+            <td>
+              <div style="display:inline; border:1px solid black;">Inline</div>
+              <div style="display:block; border:1px solid black;">Block</div>
+            </td>
+            <td>
+              Defines how an element is displayed (block, inline, flex, etc.).
+            </td>
+          </tr>
+          <tr>
+            <td><code>flex</code></td>
+            <td>
+              <div
+                style="display:flex; gap:5px; border:1px solid black; padding:5px;"
+              >
+                <div style="background:#006699; color:white; padding:5px;">
+                  1
+                </div>
+                <div style="background:#004466; color:white; padding:5px;">
+                  2
+                </div>
+                <div style="background:#003344; color:white; padding:5px;">
+                  3
+                </div>
+              </div>
+            </td>
+            <td>Flexbox layout for responsive design.</td>
+          </tr>
+          <tr>
+            <td><code>font-weight</code></td>
+            <td style="font-weight: bold;">Bold Text</td>
+            <td>Controls text thickness (normal, bold, 100–900).</td>
+          </tr>
+          <tr>
+            <td><code>text-decoration</code></td>
+            <td style="text-decoration: underline;">Underlined</td>
+            <td>Adds underline, overline, or line-through.</td>
+          </tr>
+          <tr>
+            <td><code>line-height</code></td>
+            <td style="line-height: 2;">Double Spaced</td>
+            <td>Sets spacing between lines of text.</td>
+          </tr>
+          <tr>
+            <td><code>letter-spacing</code></td>
+            <td style="letter-spacing: 4px;">Spaced Out</td>
+            <td>Adjusts spacing between characters.</td>
+          </tr>
+          <tr>
+            <td><code>border-radius</code></td>
+            <td
+              style="border: 1px solid black; border-radius: 10px; padding:4px;"
+            >
+              Rounded Box
+            </td>
+            <td>Rounds the corners of elements.</td>
+          </tr>
+          <tr>
+            <td><code>box-shadow</code></td>
+            <td style="box-shadow: 2px 2px 6px gray; padding:4px;">
+              Shadow Box
+            </td>
+            <td>Adds shadow aro</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Common HTML Setup Section -->
+    <section>
+      <h2>Common HTML Setup</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Example</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 1. HTML5 Page Setup -->
+          <tr>
+            <td>
+              <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My Webpage&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </td>
+            <td>
+              HTML5 page boilerplate with meta viewport and stylesheet link.
+            </td>
+          </tr>
+
+          <!-- 2. Linking a CSS File -->
+          <tr>
+            <td><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></td>
+            <td>Links an external CSS stylesheet to your HTML file.</td>
+          </tr>
+
+          <!-- 3. Linking a JavaScript File -->
+          <tr>
+            <td><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></td>
+            <td>Links an external JavaScript file.</td>
+          </tr>
+
+          <!-- 4. Adding an Image -->
+          <tr>
+            <td>
+              <code
+                >&lt;img src="images/photo.jpg" alt="Description of
+                image"&gt;</code
+              >
+            </td>
+            <td>Embeds an image with required alt text for accessibility.</td>
+          </tr>
+
+          <!-- 5. Anchor (Clickable Link) -->
+          <tr>
+            <td>
+              <code
+                >&lt;a href="https://www.example.com"&gt;Click
+                Here&lt;/a&gt;</code
+              >
+            </td>
+            <td>Creates a clickable hyperlink.</td>
+          </tr>
+
+          <!-- 6. Comment in HTML -->
+          <tr>
+            <td><code>&lt;!-- This is a comment --&gt;</code></td>
+            <td>Inserts a comment that will not be displayed on the page.</td>
+          </tr>
+
+          <!-- 7. Basic Table Setup -->
+          <tr>
+            <td>
+              <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Heading 1&lt;/th&gt;
+    &lt;th&gt;Heading 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            </td>
+            <td>Defines a basic HTML table with headings and rows.</td>
+          </tr>
+
+          <!-- 8. Form Template -->
+          <tr>
+            <td>
+              <pre><code>&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+            </td>
+            <td>
+              Basic form template with label, text input, and submit button.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Created by Kurt Jensen | Codecademy Project</p>
+    </footer>
+  </body>
+</html>
